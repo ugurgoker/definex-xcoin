@@ -38,7 +38,7 @@ class TextBasic extends StatelessWidget {
       style: TextStyle(
         letterSpacing: letterSpacing ?? 0.0,
         color: color ?? R.color.black,
-        fontFamily: fontFamily ?? R.fonts.interRegular,
+        fontFamily: fontFamily ?? R.fonts.robotoRegular,
         fontSize: fontSize ?? 14.0,
         decoration: underline! ? TextDecoration.underline : null,
         fontWeight: fontWeight ?? FontWeight.normal,
@@ -60,7 +60,7 @@ TextSpan textSpanBasic({
     text: text,
     style: TextStyle(
       color: color,
-      fontFamily: fontFamily ?? R.fonts.interRegular,
+      fontFamily: fontFamily ?? R.fonts.robotoRegular,
       fontSize: fontSize,
       fontWeight: fontWeight ?? FontWeight.normal,
       decoration: underline! ? TextDecoration.underline : null,

@@ -62,7 +62,7 @@ class XCoinApp extends StatelessWidget with BaseView {
       child: Builder(builder: (context) {
         return MaterialApp.router(
           theme: ThemeData(
-            fontFamily: R.fonts.interRegular,
+            fontFamily: R.fonts.robotoRegular,
             primarySwatch: R.color.primary,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),

@@ -68,7 +68,7 @@ extension ExtensionString on String {
 
       children.add(textSpanBasic(
         text: source.substring(match.start, match.end),
-        fontFamily: boldFont ?? font ?? R.fonts.interBold,
+        fontFamily: boldFont ?? font ?? R.fonts.robotoBold,
         color: boldTextColor ?? textColor,
         fontSize: boldFontSize ?? 14.0,
         fontWeight: fontWeight,

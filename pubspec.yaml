@@ -65,38 +65,50 @@ flutter:
     - assets/translations/
   
   fonts:
-    - family: interBlack
+    - family: robotoBlack
       fonts:
-        - asset: assets/fonts/Inter-Black.ttf
+        - asset: assets/fonts/Roboto-Black.ttf
 
-    - family: interBold
+    - family: robotoBlackItalic
       fonts:
-        - asset: assets/fonts/Inter-Bold.ttf
+        - asset: assets/fonts/Roboto-BlackItalic.ttf
 
-    - family: interExtraBold
+    - family: robotoBold
       fonts:
-        - asset: assets/fonts/Inter-ExtraBold.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
 
-    - family: interExtraLight
+    - family: robotoBoldItalic
       fonts:
-        - asset: assets/fonts/Inter-ExtraLight.ttf
+        - asset: assets/fonts/Roboto-BoldItalic.ttf
 
-    - family: interLight
+    - family: robotoItalic
       fonts:
-        - asset: assets/fonts/Inter-Light.ttf
+        - asset: assets/fonts/Roboto-Italic.ttf
 
-    - family: interMedium
+    - family: robotoLight
       fonts:
-        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
 
-    - family: interRegular
+    - family: robotoLightItalic
       fonts:
-        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Roboto-LightItalic.ttf
 
-    - family: interSemiBold
+    - family: robotoMedium
       fonts:
-        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
 
-    - family: interThin
+    - family: robotoMediumItalic
       fonts:
-        - asset: assets/fonts/Inter-Thin.ttf
+        - asset: assets/fonts/Roboto-MediumItalic.ttf
+
+    - family: robotoRegular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+
+    - family: robotoThin
+      fonts:
+        - asset: assets/fonts/Roboto-Thin.ttf
+
+    - family: robotoThinItalic
+      fonts:
+        - asset: assets/fonts/Roboto-ThinItalic.ttf
