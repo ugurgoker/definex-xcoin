@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:xcoin2/core/utils/utilities.dart';
+import 'package:xcoin2/ui/widgets/widget_banner.dart';
 import 'package:xcoin2/ui/widgets/widget_list_item.dart';
 import 'package:xcoin2/ui/widgets/widget_scroll.dart';
 
@@ -13,7 +15,6 @@ class FragmentHome extends StatefulWidget {
   @override
   State<FragmentHome> createState() => _FragmentHomeState();
 }
-
 class _FragmentHomeState extends State<FragmentHome> with AutomaticKeepAliveClientMixin<FragmentHome>, BaseView {
   @override
   bool get wantKeepAlive => true;
@@ -40,12 +41,25 @@ class _FragmentHomeState extends State<FragmentHome> with AutomaticKeepAliveClie
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            _getHeader(context, viewModel),
+            const SizedBox(height: 28.0),
             _getTitle(context, viewModel),
             const SizedBox(height: 12.0),
             _getCoinList(context, viewModel),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _getHeader(BuildContext context, ViewModelFragmentHome viewModel) {
+    return BannerBasic(
+      title: R.string.welcome(name: 'Agilan'),
+      subtitle: R.string.homeBannerText,
+      buttonTitle: R.string.investToday,
+      iconPath: R.drawable.svg.iconBannerHome,
+      color: R.color.primary,
+      onPressedButton: () => Utilities.alerts.showToast(R.string.connectionTimeOut),
     );
   }
 

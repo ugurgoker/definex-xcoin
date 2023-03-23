@@ -24,18 +24,18 @@ class AppColor {
 final Color radicalRed = const Color(0xFFD90429);
 final Color green = const Color(0xFF21BF73);
 
-  final MaterialColor primary = const MaterialColor(0xFF0037FF, {
-    25: Color(0xFFFCFAFF),
-    50: Color(0xFFF9F5FF),
-    100: Color(0xFFF2F3FF),
-    200: Color(0xFFE4E5FF),
-    300: Color(0xFFC6C9FF),
-    400: Color(0xFFA1A7FF),
-    500: Color(0xFF727CFF),
-    600: Color(0xFF0037FF),
-    700: Color(0xFF0031E4),
-    800: Color(0xFF002BC6),
-    900: Color(0xFF0023A1),
+  final MaterialColor primary = const MaterialColor(0xFF203ED6, {
+    25: Color(0xFF203ED6),
+    50: Color(0xFF203ED6),
+    100: Color(0xFF203ED6),
+    200: Color(0xFF203ED6),
+    300: Color(0xFF203ED6),
+    400: Color(0xFF203ED6),
+    500: Color(0xFF203ED6),
+    600: Color(0xFF203ED6),
+    700: Color(0xFF203ED6),
+    800: Color(0xFF203ED6),
+    900: Color(0xFF203ED6),
   });
 
   final MaterialColor gray = const MaterialColor(0xFF475467, {
