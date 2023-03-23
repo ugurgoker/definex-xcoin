@@ -133,6 +133,17 @@ extension ExtensionString on String {
   String capitalize() => '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
 
   String parseHtmlString() => replaceAll('<br/>', '\n');
+
+  String getCurrencySymbol() {
+    switch (this) {
+      case 'usd':
+        return '\$';
+      case 'euro':
+        return '€';
+      default:
+        return this;
+    }
+  }
 }
 
 extension ExtensionNullableString on String? {

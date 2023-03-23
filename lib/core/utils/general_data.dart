@@ -1,4 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:intl/intl.dart';
 
 import '../enums/enum.dart';
 import 'utilities.dart';
@@ -6,6 +7,8 @@ import 'utilities.dart';
 class GeneralData {
   static GeneralData? _instance;
   static GeneralData getInstance() => _instance ??= GeneralData();
+
+  static NumberFormat currencyFormat = NumberFormat('#,##0.00');
 
   final String _spDARKMODE = 'dark_mode';
   final String _spLANGUAGE = 'language';

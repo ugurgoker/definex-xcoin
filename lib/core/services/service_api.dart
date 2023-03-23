@@ -17,8 +17,6 @@ abstract class ApiClient {
 
   @GET('trending.json')
   Future<ResponseTrendingCoin> getTrendingCoins();
-
-  
 }
 
 class ServiceApi extends ChangeNotifier {
@@ -44,14 +42,14 @@ class ServiceApi extends ChangeNotifier {
   }
 
   Future<void> onError(DioError e, ErrorInterceptorHandler handler) async {
-    
+    handler.next(e);
   }
 
   Future<void> onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
-    
+    handler.next(options);
   }
 
   Future<void> onResponse(Response response, ResponseInterceptorHandler handler) async {
-    
+    handler.next(response);
   }
 }
