@@ -10,5 +10,7 @@
     "accessStoragePermission": "Lütfen depolama erişimi izni verin",
     "accessCameraPermission": "Lütfen kamera erişimi izni verin",
     "accessGalleryPermission": "Lütfen galeri erişimi izni verin",
-    "accessLocationPermission": "Lütfen lokasyon erişimi izni verin"
+    "accessLocationPermission": "Lütfen lokasyon erişimi izni verin",
+    "splashBottomText":"Turkey's Highly Rated Cryptocurrency Exchange",
+    "logoText":"COINS"
 }
