@@ -18,6 +18,7 @@ class AppColor {
   final Color actionSheetTitle = const Color(0xFFEBEBF5);
 
   final Color bottomSheetRadiusColor = const Color(0xFF858585);
+  final Color logoTextColor = const Color(0xFF343A40);
 
   final MaterialColor primary = const MaterialColor(0xFF0037FF, {
     25: Color(0xFFFCFAFF),

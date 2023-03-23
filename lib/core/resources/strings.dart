@@ -13,5 +13,7 @@ class AppStrings {
   final String accessCameraPermission = 'accessCameraPermission'.tr();
   final String accessGalleryPermission = 'accessGalleryPermission'.tr();
   final String accessLocationPermission = 'accessLocationPermission'.tr();
+  final String splashBottomText = 'splashBottomText'.tr();
+  final String logoText = 'logoText'.tr();
 
 }

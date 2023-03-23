@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/resources/_r.dart';
 import '../../../core/services/service_device_info.dart';
 import '../../base/base_view.dart';
@@ -12,7 +13,9 @@ class ViewSplash extends StatelessWidget with BaseView {
   Widget build(BuildContext context) {
     di<ServiceDeviceInfo>(context);
     return WidgetBase<ViewModelSplash>(
-      statusbarBrightness: router(context).uiBrightnessStyle.dark(systemNavigationBarColor: R.color.white),
+      statusbarBrightness: router(context)
+          .uiBrightnessStyle
+          .dark(systemNavigationBarColor: R.color.white),
       model: ViewModelSplash(),
       builder: (context, viewModel) {
         initListener(context, viewModel);
@@ -25,8 +28,42 @@ class ViewSplash extends StatelessWidget with BaseView {
   }
 
   Widget _getBody(BuildContext context, ViewModelSplash viewModel) {
-    return const Center(
-      child: TextBasic(text: 'splash'),
+    return SafeArea(
+      child: Column(
+        children: [
+          Spacer(),
+          _getLogo(context, viewModel),
+          Spacer(),
+          _getBottomText(context, viewModel),
+        ],
+      ),
+    );
+  }
+
+  Widget _getLogo(BuildContext context, ViewModelSplash viewModel) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SvgPicture.asset(R.drawable.svg.xIcon),
+        const SizedBox(width: 4),
+        TextBasic(
+          text: R.string.logoText,
+          fontFamily: R.fonts.robotoBold,
+          fontWeight: FontWeight.w700,
+          color: R.color.logoTextColor,
+          fontSize: 36,
+        ),
+      ],
+    );
+  }
+
+  Widget _getBottomText(BuildContext context, ViewModelSplash viewModel) {
+    return TextBasic(
+      text: R.string.splashBottomText,
+      fontFamily: R.fonts.robotoItalic,
+      fontWeight: FontWeight.w100,
+      color: R.color.logoTextColor,
+      fontSize: 12,
     );
   }
 }
