@@ -26,6 +26,8 @@ class AppColor {
 
   final Color grayDark = const Color(0xFF6C757D);
   final Color borderColor = const Color(0xFFDFE2E4);
+  final Color refer = const Color(0xFFF59300);
+  final Color reward = const Color(0xFF9300F5);
 
   final MaterialColor primary = const MaterialColor(0xFF0063F5, {
     25: Color(0xFF0063F5),

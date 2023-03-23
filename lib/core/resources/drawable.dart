@@ -11,4 +11,6 @@ class _SvgDrawable {
     final iconProfile = 'assets/svg/icon-profile.svg';
     final iconRewards = 'assets/svg/icon-rewards.svg';
     final iconBannerHome = 'assets/svg/icon-banner-home.svg';
+    final iconRefer = 'assets/svg/icon-refer.svg';
+    final iconShare = 'assets/svg/icon-share.svg';
 }

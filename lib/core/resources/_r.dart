@@ -1,6 +1,6 @@
 
-import 'package:xcoin2/core/constants/constant_filter.dart';
 
+import '../constants/constant_filter.dart';
 import '../resources/color.dart';
 import '../resources/dimens.dart';
 import '../resources/drawable.dart';
