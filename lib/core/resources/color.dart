@@ -27,18 +27,18 @@ class AppColor {
   final Color grayDark = const Color(0xFF6C757D);
   final Color borderColor = const Color(0xFFDFE2E4);
 
-  final MaterialColor primary = const MaterialColor(0xFF203ED6, {
-    25: Color(0xFF203ED6),
-    50: Color(0xFF203ED6),
-    100: Color(0xFF203ED6),
-    200: Color(0xFF203ED6),
-    300: Color(0xFF203ED6),
-    400: Color(0xFF203ED6),
-    500: Color(0xFF203ED6),
-    600: Color(0xFF203ED6),
-    700: Color(0xFF203ED6),
-    800: Color(0xFF203ED6),
-    900: Color(0xFF203ED6),
+  final MaterialColor primary = const MaterialColor(0xFF0063F5, {
+    25: Color(0xFF0063F5),
+    50: Color(0xFF0063F5),
+    100: Color(0xFF0063F5),
+    200: Color(0xFF0063F5),
+    300: Color(0xFF0063F5),
+    400: Color(0xFF0063F5),
+    500: Color(0xFF0063F5),
+    600: Color(0xFF0063F5),
+    700: Color(0xFF0063F5),
+    800: Color(0xFF0063F5),
+    900: Color(0xFF0063F5),
   });
 
   final MaterialColor gray = const MaterialColor(0xFF475467, {

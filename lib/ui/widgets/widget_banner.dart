@@ -78,7 +78,6 @@ class BannerBasic extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
                 onPressed: onPressedButton,
                 bgColor: R.color.white,
-                radius: 4.0,
                 fontFamily: R.fonts.robotoItalic,
                 fontSize: 12.0,
                 textColor: color,

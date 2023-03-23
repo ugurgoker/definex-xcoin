@@ -25,7 +25,7 @@ class ButtonBasic extends StatelessWidget {
     this.textBasic,
     this.bgColor,
     this.disabledColor,
-    this.radius = 16.0,
+    this.radius = 4.0,
     this.elevation = 1.0,
     this.borderSide = BorderSide.none,
     this.onPressed,

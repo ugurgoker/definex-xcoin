@@ -1,4 +1,6 @@
 
+import 'package:xcoin2/core/constants/constant_filter.dart';
+
 import '../resources/color.dart';
 import '../resources/dimens.dart';
 import '../resources/drawable.dart';
@@ -13,6 +15,7 @@ class R {
     _themeColor = null;
     _string = null;
     _dimens = null;
+    ConstantFilter.refresh();
   }
 
   static Drawable? _drawable;

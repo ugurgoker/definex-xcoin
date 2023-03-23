@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:xcoin2/ui/base/base_view.dart';
+import 'package:xcoin2/ui/bs/bottom_sheet_coin_filter.dart';
 import '../../../core/resources/_r.dart';
 import '../../widgets/widgets_text.dart';
 import 'vm_fragment_market.dart';
@@ -114,18 +115,29 @@ class _FragmentMarketState extends State<FragmentMarket> with AutomaticKeepAlive
             border: Border.all(width: 0.5, color: R.color.grayLight),
             borderRadius: BorderRadius.circular(20.0),
           ),
-          child: Row(
-            children: [
-              TextBasic(
-                text: 'Market- INR',
-                color: R.color.grayLight,
-                fontFamily: R.fonts.robotoItalic,
-                fontSize: 12.0,
-                fontWeight: FontWeight.w100,
-              ),
-              const SizedBox(width: 4.0),
-              Icon(Icons.arrow_drop_down_rounded, color: R.color.grayLight, size: 16.0),
-            ],
+          child: GestureDetector(
+            onTap: () {
+              router(context).showBaseBottomSheet(
+                context,
+                BottomSheetCoinFilter(
+                  selectedFilter: viewModel.selectedFilter,
+                  onChangedFilter: viewModel.setSelectedFilter,
+                ),
+              );
+            },
+            child: Row(
+              children: [
+                TextBasic(
+                  text: viewModel.selectedFilter?.dropdownTitle ?? 'Select',
+                  color: R.color.grayLight,
+                  fontFamily: R.fonts.robotoItalic,
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.w100,
+                ),
+                const SizedBox(width: 4.0),
+                Icon(Icons.arrow_drop_down_rounded, color: R.color.grayLight, size: 16.0),
+              ],
+            ),
           ),
         ),
       ],
