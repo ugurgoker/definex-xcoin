@@ -15,5 +15,10 @@ class AppStrings {
   final String accessLocationPermission = 'accessLocationPermission'.tr();
   final String splashBottomText = 'splashBottomText'.tr();
   final String logoText = 'logoText'.tr();
+  final String home = 'home'.tr();
+  final String porfolio = 'porfolio'.tr();
+  final String rewards = 'rewards'.tr();
+  final String market = 'market'.tr();
+  final String profile = 'profile'.tr();
 
 }

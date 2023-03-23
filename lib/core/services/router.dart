@@ -7,7 +7,7 @@ import '../../ui/views/splash/view_splash.dart';
 @MaterialAutoRouter(
   routes: [
     AutoRoute(path: '/splash', page: ViewSplash),
-    AutoRoute(path: '/home', page: ViewHome),
+    CustomRoute(path: '/home', page: ViewHome, transitionsBuilder: TransitionsBuilders.fadeIn),
 
     RedirectRoute(path: '*', redirectTo: '/splash'),
   ],
