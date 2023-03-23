@@ -12,5 +12,10 @@
     "accessGalleryPermission": "Lütfen galeri erişimi izni verin",
     "accessLocationPermission": "Lütfen lokasyon erişimi izni verin",
     "splashBottomText":"Türkiye'nin En Yüksek Puanlı Kripto Para Borsası",
-    "logoText":"COINS"
+    "logoText":"COINS",
+    "home": "Home",
+    "porfolio": "Portfolio",
+    "rewards": "Rewards",
+    "market": "Market",
+    "profile": "Profile"
 }
