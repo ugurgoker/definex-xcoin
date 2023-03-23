@@ -21,5 +21,9 @@ class AppStrings {
   final String market = 'market'.tr();
   final String profile = 'profile'.tr();
   final String trendingCoins = 'trendingCoins'.tr();
+  String welcome({required String name}) => 'welcome'.tr(namedArgs: {'name': name});
+  final String homeBannerText = 'homeBannerText'.tr();
+  final String investToday = 'investToday'.tr();
+  final String comingSoon = 'comingSoon'.tr();
 
 }

@@ -18,5 +18,9 @@
     "rewards": "Rewards",
     "market": "Market",
     "profile": "Profile",
-    "trendingCoins": "Trending Coins"
+    "trendingCoins": "Trending Coins",
+    "welcome": "Welcome {name}",
+    "homeBannerText": "Make you first Investment today",
+    "investToday": "Invest Today",
+    "comingSoon": "Coming Soon"
 }
