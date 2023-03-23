@@ -1,10 +1,13 @@
 import 'dart:io';
 
+import 'package:dart_json_mapper/dart_json_mapper.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:retrofit/retrofit.dart';
+
+import '../models/model_coin.dart';
 
 part 'service_api.g.dart';
 
@@ -12,8 +15,8 @@ part 'service_api.g.dart';
 abstract class ApiClient {
   factory ApiClient(Dio dio, {String? baseUrl}) = _ApiClient;
 
-  // @POST('/account/Authentication/Login')
-  // Future<ResponseLogin> login(@Body() ModelLogin body);
+  @GET('trending.json')
+  Future<ResponseTrendingCoin> getTrendingCoins();
 
   
 }
