@@ -22,3 +22,13 @@ enum Flavor {
   const Flavor(this.value);
   final String value;
 }
+
+enum CoinListType {
+  all('ALL'),
+  gainers('GAINERS'),
+  losers('LOSERS'),
+  favourites('FAVORITES');
+
+  const CoinListType(this.value);
+  final String value;
+}

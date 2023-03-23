@@ -6,8 +6,10 @@ import 'package:dio/io.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:retrofit/retrofit.dart';
+import 'package:xcoin2/core/models/model_status.dart';
 
 import '../models/model_coin.dart';
+import '../models/response_market_list.dart';
 
 part 'service_api.g.dart';
 
@@ -17,6 +19,12 @@ abstract class ApiClient {
 
   @GET('trending.json')
   Future<ResponseTrendingCoin> getTrendingCoins();
+  
+  @GET('market/{coinListType}/marketList.json')
+  Future<ResponseMarketList> getMarketList(@Path() String coinListType);
+  
+  @GET('market/status.json')
+  Future<ModelStatus> getMarketStatus();
 }
 
 class ServiceApi extends ChangeNotifier {

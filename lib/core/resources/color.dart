@@ -21,8 +21,11 @@ class AppColor {
   final Color logoTextColor = const Color(0xFF343A40);
   final Color titleColor = const Color(0xFF212529);
 
-final Color radicalRed = const Color(0xFFD90429);
-final Color green = const Color(0xFF21BF73);
+  final Color radicalRed = const Color(0xFFD90429);
+  final Color green = const Color(0xFF21BF73);
+
+  final Color grayDark = const Color(0xFF6C757D);
+  final Color borderColor = const Color(0xFFDFE2E4);
 
   final MaterialColor primary = const MaterialColor(0xFF203ED6, {
     25: Color(0xFF203ED6),
