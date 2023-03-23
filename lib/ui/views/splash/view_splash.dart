@@ -12,7 +12,7 @@ class ViewSplash extends StatelessWidget with BaseView {
   Widget build(BuildContext context) {
     di<ServiceDeviceInfo>(context);
     return WidgetBase<ViewModelSplash>(
-      statusbarBrightness: router(context).uiBrightnessStyle.light(systemNavigationBarColor: R.color.primary.shade600),
+      statusbarBrightness: router(context).uiBrightnessStyle.dark(systemNavigationBarColor: R.color.white),
       model: ViewModelSplash(),
       builder: (context, viewModel) {
         initListener(context, viewModel);
