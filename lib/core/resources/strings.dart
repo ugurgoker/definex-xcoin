@@ -20,5 +20,6 @@ class AppStrings {
   final String rewards = 'rewards'.tr();
   final String market = 'market'.tr();
   final String profile = 'profile'.tr();
+  final String trendingCoins = 'trendingCoins'.tr();
 
 }

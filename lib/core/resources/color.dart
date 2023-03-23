@@ -13,12 +13,16 @@ class AppColor {
   final Color grayLightBlue = const Color(0xFFDAE2E9);
 
   final Color borderBottomNav = const Color(0xFFD5E1E2);
-  final Color viewBg = const Color(0xFFF4F5F7);
+  final Color viewBg = const Color(0xFFF8F9FA);
   final Color price = const Color(0xFF2C2B32);
   final Color actionSheetTitle = const Color(0xFFEBEBF5);
 
   final Color bottomSheetRadiusColor = const Color(0xFF858585);
   final Color logoTextColor = const Color(0xFF343A40);
+  final Color titleColor = const Color(0xFF212529);
+
+final Color radicalRed = const Color(0xFFD90429);
+final Color green = const Color(0xFF21BF73);
 
   final MaterialColor primary = const MaterialColor(0xFF0037FF, {
     25: Color(0xFFFCFAFF),
